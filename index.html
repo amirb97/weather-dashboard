@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row bg-primary text-white justify-content-center">
+            <h1 class="text-center">Weather Dashboard</h1>
+        </header>
+    </div>
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <div class="pb-3">
+                    <h2>Search For A City:</h2>
+                    <form id="user-form" class="user-form">
+                        <input class="form-input" name="city" id="city" type="text" placeholder="City Name" autofocus="true">
+                        <button type="submit" class="btn">Search</button>
+                    </form>
+                </div>
+
+                <div class="pt-3 cities" id="past-cities">
+                    <p class="card mb-4">Bakersfield</p>
+                    <p class="card mb-4">Riverside</p>
+                    <p class="card mb-4">Paso Robles</p>
+                    <p class="card mb-4">SLO</p>
+                    <p class="card mb-4">SunnyVale</p>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="weather-card-main" id="weather-main">
+                    <h2>Atlanta (3/30/2021)☁️</h2>
+                    <p>Temp: 74.01°F</p>
+                    <p>Wind: 6.67 MPH</p>
+                    <p>Humidity: 46%</p>
+                    <p>UV Index: <span class="bg-success text-white p-1">0.47</span></p>
+                </div>
+
+                <h2>5-Day Forecast:</h2>
+                <div class="justify-content-between row">
+                    <div class="weather-card-sub col-2" id="day1">
+                        <h3>3/31/2021</h3>
+                        <p>🌧️</p>
+                        <p>Temp: 73.72°F</p>
+                        <p>Wind: 9.53 MPH</p>
+                        <p>Humidity: 66%</p>
+                    </div>
+                    <div class="weather-card-sub col-2" id="day2">
+                        <h3>3/31/2021</h3>
+                        <p>🌧️</p>
+                        <p>Temp: 73.72°F</p>
+                        <p>Wind: 9.53 MPH</p>
+                        <p>Humidity: 66%</p>
+                    </div>
+                    <div class="weather-card-sub col-2" id="day3">
+                        <h3>3/31/2021</h3>
+                        <p>🌧️</p>
+                        <p>Temp: 73.72°F</p>
+                        <p>Wind: 9.53 MPH</p>
+                        <p>Humidity: 66%</p>
+                    </div>
+                    <div class="weather-card-sub col-2" id="day4">
+                        <h3>3/31/2021</h3>
+                        <p>🌧️</p>
+                        <p>Temp: 73.72°F</p>
+                        <p>Wind: 9.53 MPH</p>
+                        <p>Humidity: 66%</p>
+                    </div>
+                    <div class="weather-card-sub col-2" id="day5">
+                        <h3>3/31/2021</h3>
+                        <p>🌧️</p>
+                        <p>Temp: 73.72°F</p>
+                        <p>Wind: 9.53 MPH</p>
+                        <p>Humidity: 66%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

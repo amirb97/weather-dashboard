@@ -1,0 +1,63 @@
+.btn {
+    font-size: 1.3rem;
+    text-decoration:none;
+    padding: 6px 5px;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    box-shadow: 3px 3px black;
+}
+
+.btn:hover {
+    background-color: rgb(73, 152, 255);
+    color: white;
+    box-shadow: 2px 2px black;
+}
+
+.form-input {
+    width: 100%;
+    padding: 3%;
+    margin: 5px 0;
+    font-size: 1.2rem;
+    border: 2px solid rgb(185, 185, 185);
+}
+
+.cities {
+    border-top: 2px solid rgb(107, 105, 105);
+}
+
+.card {
+    font-size: 1.3rem;
+    text-decoration:none;
+    padding: 6px 5px;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    background-color: rgb(206, 205, 205);
+    box-shadow: 3px 3px black;
+}
+
+.card:hover {
+    background-color: rgb(151, 172, 199);
+    color: white;
+    box-shadow: 2px 2px black;
+}
+
+.weather-card-main {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 20px;
+}
+.weather-card-sub {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(13, 30, 53);
+    color: white;
+}
+
+.weather-card-sub p {
+    font-size: 20px;
+}
