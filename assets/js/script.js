@@ -30,16 +30,24 @@ var getApiFetch = function(lat, long) {
     });
 };
 
+var displayMainForecast = function(data) {
+
+};
+
+var displaySubForecasts = function(data) {
+
+};
+
 //loads in the cities when the site first loads from localStorage
 var loadCities = function() {
     userInput = JSON.parse(localStorage.getItem("cities"));
 
     if(!userInput) {
-        return;
+        userInput = [];
     };
 
     for(var i=0; i < userInput.length; i++) {
-        $("#past-cities").append('<p class="card mb-4">' + userInput[i] + '</p>');
+        $("#past-cities").append('<p class="card mb-4" id="' + userInput[i] + '">' + userInput[i] + '</p>');
     };
 };
 
@@ -50,7 +58,7 @@ var saveCity = function(city) {
     } else {
         userInput.push(city);
         localStorage.setItem("cities", JSON.stringify(userInput));
-        $("#past-cities").append('<p class="card mb-4">' + city + '</p>');
+        $("#past-cities").append('<p class="card mb-4" id="' + city + '">' + city + '</p>');
     };
 };
 
@@ -65,6 +73,13 @@ $("#user-form").submit(function(e) {
 
     //resets the form value to blank
     $("#city").val("");
+});
+
+//checks for if a past city is clicked and sends that city to the API functions
+$("#past-cities").click(function(e) {
+    if (e.target.id != "past-cities") {
+        getCoord(e.target.id);
+    };
 });
 
 //initially loads the cities from localStorage
